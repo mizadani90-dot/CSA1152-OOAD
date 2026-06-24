@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://schema.omg.org/spec/UML/2.1">
+  <xmi:Documentation exporter="umbrello uml modeller 25.04.3-9e72e89 (Applications 25.04.3) http://umbrello.kde.org" exporterVersion="2.0.4"/>
+  <uml:Model xmi:id="m1" name="UML Model">
+    <packagedElement xmi:type="uml:Stereotype" xmi:id="folder" name="folder"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Logical_View" name="Logical View" stereotype="folder">
+      <uml:Package xmi:id="Datatypes" name="Datatypes" stereotype="folder"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="ux3jNskk3ry2b" name="computer">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uwqe9iGluUfN2" name="student record"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uYmWmN3w2bSbQ" name="booklist"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uu0txHeKHE7Mo" name="maintainstudrecord"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ugBBdLyJMUCEL" name="enter issue"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ugTbQbkOZsYPu" name="create new author"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="u3L5tX5xhFbQN" name="check availability"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="uD3xi8lx02k24" name="stud">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uI6DF3MEX52Av" name="stud details"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uPJwvoHHWYA1O" name="request for books"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uliPtveF281m0" name="return previous books"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uLKahPvwYXCUU" name="login"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="ujGZHoluWUVSp" name="admin">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="uhgF7M8U3Yi8z" name="student details"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="u7rvlSkAYR2kW" name="booklist"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uhD6LITx1VebJ" name="verify stud id"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uJCDgB8sHFiNW" name="check for book availability"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uY3mN6Z5WHWeg" name="issue books"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="uYsCYGcUZXklX" name="order for new author"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="ujsRONGCdXMWP" name="maintain student details"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="uJ2KlXyWInrEg" name="" client="ux3jNskk3ry2b" supplier="ux3jNskk3ry2b"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="uFRestgDDW5k1" name="">
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="uikJYJGmMTFpN" name="" type="ux3jNskk3ry2b" aggregation="none" isNavigable="false" changeability="changeable"/>
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="uqrNzR1esVd1n" name="" type="ux3jNskk3ry2b" aggregation="none" isNavigable="true" changeability="changeable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="uuMDhTYNKT3Qe" name="">
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="uXRQ0i6AGz89o" name="" type="ux3jNskk3ry2b" aggregation="none" isNavigable="false" changeability="changeable"/>
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="ulof4AEs4NEXL" name="" type="ux3jNskk3ry2b" aggregation="none" isNavigable="true" changeability="changeable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="uUt0rtr3LZOWV" name="">
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="uAccMtpZCoRDN" name="" type="ujGZHoluWUVSp" aggregation="none" isNavigable="false" changeability="changeable"/>
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="u3qksC7Cc5x5Q" name="" type="ux3jNskk3ry2b" aggregation="none" isNavigable="true" changeability="changeable"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="uYHObgAjLPA89" name="">
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="uI2WtmAxl36VS" name="" type="uD3xi8lx02k24" aggregation="none" isNavigable="false" changeability="changeable"/>
+        <ownedEnd xmi:type="uml:AssociationEnd" xmi:id="uAaaUBbzO78nL" name="" type="ux3jNskk3ry2b" aggregation="none" isNavigable="true" changeability="changeable"/>
+      </packagedElement>
+      <xmi:Extension extender="umbrello">
+        <diagrams>
+          <diagram xmi.id="uYXc1aIKryrvJ" name="class diagram" type="1" documentation="" backgroundcolor="#ffffff" usebackgroundcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" griddotcolor="#d3d3d3" linecolor="#990000" linewidth="0" textcolor="#000000" usefillcolor="1" showattribassocs="1" showatts="1" showattsig="1" showops="1" showopsig="1" showpackage="1" showpubliconly="0" showscope="1" showstereotype="2" localid="-1" showgrid="0" snapgrid="0" snapcsgrid="0" snapx="25" snapy="25" zoom="130.927" canvasheight="800" canvaswidth="1100" isopen="1">
+            <widgets>
+              <classwidget xmi.id="ujGZHoluWUVSp" localid="uSI8NjP2JQlje" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" autoresize="1" x="642.012" y="368.908" width="178" height="128" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="ux3jNskk3ry2b" localid="uOg9dbBycJiN5" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" autoresize="1" x="501" y="161" width="142" height="112" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+              <classwidget xmi.id="uD3xi8lx02k24" localid="uAgDuco8ZE8km" textcolor="#000000" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="0" usesdiagramusefillcolor="0" fillcolor="#ffffc0" font="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" autoresize="1" x="317.664" y="367.815" width="156" height="80" isinstance="0" showstereotype="2" showoperations="1" showpubliconly="0" showopsigs="601" showpackage="1" showscope="1" showattributes="1" showattsigs="601"/>
+            </widgets>
+            <messages/>
+            <associations>
+              <assocwidget xmi.id="uUt0rtr3LZOWV" localid="uJukaP0xd398M" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="512" widgetaid="ujGZHoluWUVSp" widgetbid="ux3jNskk3ry2b" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="683.877" starty="368.908"/>
+                  <endpoint endx="613.243" endy="273"/>
+                </linepath>
+              </assocwidget>
+              <assocwidget xmi.id="uYHObgAjLPA89" localid="uLlPQpumN7OpJ" textcolor="none" linecolor="#990000" linewidth="0" usefillcolor="1" usesdiagramfillcolor="1" usesdiagramusefillcolor="1" fillcolor="none" font="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" autoresize="1" seqnum="" type="512" widgetaid="uD3xi8lx02k24" widgetbid="ux3jNskk3ry2b" indexa="0" totalcounta="0" indexb="0" totalcountb="0">
+                <linepath layout="Direct">
+                  <startpoint startx="432.629" starty="367.815"/>
+                  <endpoint endx="520.249" endy="273"/>
+                </linepath>
+              </assocwidget>
+            </associations>
+          </diagram>
+        </diagrams>
+      </xmi:Extension>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="Use_Case_View" name="Use Case View" stereotype="folder"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Component_View" name="Component View" stereotype="folder"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Deployment_View" name="Deployment View" stereotype="folder"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="Entity_Relationship_Model" name="Entity Relationship Model" stereotype="folder"/>
+  </uml:Model>
+  <xmi:Extension extender="umbrello">
+    <docsettings viewid="uYXc1aIKryrvJ" documentation="" uniqueid="uAaaUBbzO78nL"/>
+    <listview>
+      <listitem id="Views" type="800" open="1">
+        <listitem id="Component_View" type="821" open="1"/>
+        <listitem id="Deployment_View" type="827" open="1"/>
+        <listitem id="Entity_Relationship_Model" type="836" open="1"/>
+        <listitem id="Logical_View" type="801" open="1">
+          <listitem id="uYXc1aIKryrvJ" type="807" label="class diagram" open="0"/>
+          <listitem id="Datatypes" type="830" open="0"/>
+          <listitem id="uD3xi8lx02k24" type="813" open="1">
+            <listitem id="uLKahPvwYXCUU" type="815" open="0"/>
+            <listitem id="uPJwvoHHWYA1O" type="815" open="0"/>
+            <listitem id="uliPtveF281m0" type="815" open="0"/>
+            <listitem id="uI6DF3MEX52Av" type="814" open="0"/>
+          </listitem>
+        </listitem>
+        <listitem id="Use_Case_View" type="802" open="1"/>
+      </listitem>
+    </listview>
+  </xmi:Extension>
+</xmi:XMI>
